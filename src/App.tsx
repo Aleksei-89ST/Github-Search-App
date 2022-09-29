@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import { FavoritesPage } from "./pages/FavoritesPage";
@@ -10,8 +9,7 @@ function App() {
     <Navigation/>
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="favorites" element={<FavoritesPage />} />
-      {/* <Route path="favorites" element={<FavoritesPage />} /> */}
+      <Route path="/favorites" element={<FavoritesPage />} />
     </Routes>
     </>
   );
